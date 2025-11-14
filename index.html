@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="web.css">
 </head>
 <body>
-<b>
+
   <!-- Header Section -->
-  <header><img src="logo.png">
+  <header>
+    <img src="images/logo.png" alt="Library Logo" class="logo">
     <h1>Andhra Loyola PG Library</h1>
     <p class="tagline">Knowledge Empowers | Read • Learn • Grow</p>
     <nav>
@@ -24,28 +25,24 @@
         <li><a href="#Services">Library Services</a></li>
         <li><a href="#staff">Staff</a></li>
         <li><a href="#contact">Contact</a></li>
-       
       </ul>
     </nav>
   </header>
-
+<b>
   <!-- Home Section -->
-  <section id="home" class="hero">
+  <section id="home" class="hero animate">
     <h2>Welcome to the Andhra Loyola PG Library</h2>
     <p>The library provides a peaceful environment for study, rich collections of books, journals, and digital resources to enhance learning and research.</p>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="content">
+  <section id="about" class="content animate">
     <h2>About the Library</h2>
-    <p>The Andhra Loyola College (Autonomous), Vijayawada, maintains a well-equipped Postgraduate Library with extensive resources supporting academic and research needs. It aims to foster knowledge through access to print and digital information.
-        The Andhra Loyola PG Library covers a total carpet area of 1212 square feet and houses a rich collection of 16,629 books across various disciplines. The library maintains 7,998 titles, supporting the academic and research needs of students and faculty.
-         It subscribes to 67 journals, including 40 Indian and 27 foreign publications, providing access to current developments in diverse fields. The library also holds 10 newspapers and magazines, and a multimedia collection of 717 CDs and DVDs.
-        To support digital access, the library offers internet connectivity with a bandwidth of 20 Mbps, along with 35 computer terminals available for users. The library operations are efficiently managed by a team of 2 dedicated staff members.</p>
+    <p>The Andhra Loyola College (Autonomous), Vijayawada, maintains a well-equipped Postgraduate Library with extensive resources supporting academic and research needs. It aims to foster knowledge through access to print and digital information. The library covers 1212 sq.ft and houses 16,629 books with 7,998 titles. It subscribes to 67 journals, holds 10 newspapers/magazines, 717 CDs/DVDs, and offers 35 computer terminals with 20 Mbps internet. Managed by 2 dedicated staff members.</p>
   </section>
 
   <!-- Library Rules -->
-  <section id="rules" class="content">
+  <section id="rules" class="content animate">
     <h2>Library Rules</h2>
     <ul>
       <li>Maintain silence inside the library.</li>
@@ -57,17 +54,17 @@
   </section>
 
   <!-- Collection -->
-  <section id="collection" class="content">
+  <section id="collection" class="content animate">
     <h2>Library Collection</h2>
     <p>The library houses thousands of books, journals, magazines, and digital materials covering Science, Humanities, and Management disciplines.</p>
     <ul>
-    <li><a href="https://alcpglibrary.blogspot.com/p/syllabus.html">PG Syllabus</a></li>
-    <li><a href="https://alcpglibrary.blogspot.com/p/digital-library.html">E-Books</a></li>
-  </ul>
+      <li><a href="https://alcpglibrary.blogspot.com/p/syllabus.html">PG Syllabus</a></li>
+      <li><a href="https://alcpglibrary.blogspot.com/p/digital-library.html">E-Books</a></li>
+    </ul>
   </section>
 
   <!-- E-Resources -->
-  <section id="eresources" class="content">
+  <section id="eresources" class="content animate">
     <h2>Electronic Resources</h2>
     <ul>
       <li><a href="https://ndl.iitkgp.ac.in/" target="_blank">National Digital Library</a></li>
@@ -79,79 +76,97 @@
     </ul>
   </section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="gallery">
+  <!-- Gallery Section -->
+  <section id="gallery" class="content animate">
     <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <div><img src="libraryinterior.jpeg" alt="Library Interior"><p>Library Interior</p></div>
-      <div><img src="readingroom.jpg" alt="Reading Area"><p>Reading Area</p></div>
-      <div><img src="BookCollection.jpg" alt="Book Collection"><p>Books Collection</p></div>
+    <div class="gallery-wrapper">
+
+      <button class="arrow left" onclick="scrollGallery(-1)">&#10094;</button>
+
+      <div class="gallery-scroll" id="galleryScroll">
+          <div class="gallery-card"><img src="images/libraryinterior.jpeg" alt=""></div>
+          <div class="gallery-card"><img src="images/readingroom.jpg" alt=""></div>
+          <div class="gallery-card"><img src="images/BookCollection.jpg" alt=""></div>
+          <div class="gallery-card"><img src="images/image1.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image2.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image3.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image4.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image5.jpg" alt=""></div>
+          <div class="gallery-card"><img src="images/image6.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image7.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image8.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image9.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image10.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image11.JPG" alt=""></div>
+          <div class="gallery-card"><img src="images/image12.jpg" alt=""></div>
+          <div class="gallery-card"><img src="images/image13.jpg" alt=""></div>
+      </div>
+
+      <button class="arrow right" onclick="scrollGallery(1)">&#10095;</button>
+
     </div>
   </section>
 
   <!-- New Arrivals -->
-  <section id="new" class="content">
+  <section id="new" class="content animate">
     <h2>New Arrivals</h2>
-    <p ><center>Check out the latest additions to our collection!</center></p>
+    <p><center>Check out the latest additions to our collection!</center></p>
     <a href="http://alcpglibrary.blogspot.com/p/collection.html">Available journals</a>
   </section>
 
-  <!--Services-->
-<section id="Services" class="content">
+  <!-- Services -->
+  <section id="Services" class="content animate">
     <h2>Library Services</h2>
     <ul>
-  <li>Circulation of Books (Issues, Returns and Renewals)</li>
-     <li>Reference Services</li>
-     <li>Periodicals and News papers</li>
-     <li>Multimedia</li>
-     <li>E-learning services</li>
-     <li>Digital Library service</li>
-     <li>Current Awareness Service </li>
-     <li>Online Catalogue Services</li>
-     <li>Old Question papers</li>
-     <li>Reprographic Services</li>
-     <li>Projects     
-    </li>
+      <li>Circulation of Books (Issues, Returns and Renewals)</li>
+      <li>Reference Services</li>
+      <li>Periodicals and News papers</li>
+      <li>Multimedia</li>
+      <li>E-learning services</li>
+      <li>Digital Library service</li>
+      <li>Current Awareness Service</li>
+      <li>Online Catalogue Services</li>
+      <li>Old Question papers</li>
+      <li>Reprographic Services</li>
+      <li>Projects</li>
     </ul>
-  <!-- Staff Section -->
-  <section id="staff" class="content">
-    <strong> <h1>Library Staff</h1></strong>
-   
-   <div class="container">
-    <div class="card">
-        <img src="Roja madam.png" class="profile-img">
-        <h3>Dr. T. Roja Mani</h3>
+  </section>
 
+  <!-- Staff Section -->
+  <section id="staff" class="content animate">
+    <h2>Library Staff</h2>
+    <div class="container">
+      <div class="card">
+        <img src="images/Roja madam.png" class="profile-img">
+        <h3>Dr. T. Roja Mani</h3>
         <p><strong>Qualification:</strong> M.A, M.L.I.Sc, M.Phil, P.G.D.LAN, NET, SET-TS&AP, Ph.D</p>
         <p><strong>Designation:</strong> Librarian</p>
         <p><strong>Experience:</strong> 16 Years</p>
-    </div>
-
-    <div class="card">
-        <img src="vinatha madam.png" class="profile-img">
+      </div>
+      <div class="card">
+        <img src="images/vinatha madam.png" class="profile-img">
         <h3>Mrs. G. Vinatha</h3>
-
         <p><strong>Qualification:</strong> M.A, M.L.I.Sc</p>
         <p><strong>Designation:</strong> Assistant Librarian</p>
         <p><strong>Experience:</strong> 10 Years</p>
+      </div>
     </div>
-</div>
-
-    <br>
     <p class="note">Our dedicated staff ensures the smooth functioning and continuous improvement of library services.</p>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="content">
+  <section id="contact" class="content animate">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:alcpglibrary@gmail.com">alcpglibrary@gmail.com</a></p>
     <p>Location: Andhra Loyola College (Autonomous), Vijayawada, Andhra Pradesh</p>
   </section>
-</b>
- <b> <!-- Footer -->
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Andhra Loyola PG Library | All Rights Reserved</p>
   </footer>
- </b>
+
+  <script src="web.js"></script>
+</b>
 </body>
 </html>
